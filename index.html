@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8" /> 
+  <head>
+    <title>Braille Rap</title>
+    <!-- <script src="https://code.jquery.com/jquery-2.1.4.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.10.2/paper-full.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.1/dat.gui.min.js"></script> -->
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="paper-full.min.js"></script>
+    <script src="dat.gui.min.js"></script>
+    <!-- <script src="StreamSaver.js"></script> -->
+    <!-- <script src="polyfill.min.js"></script> -->
+    <link rel="stylesheet" href="style.css" />
+
+    <script>var languages = {}</script>
+    <script src="braille6.js"></script>
+    <script src="braille8old.js"></script>
+    <script src="braille8new.js"></script>
+<script src="devnagrinumbers.js"></script>
+    <script src="script.js"></script>
+
+
+
+  </head>
+
+  <body>
+    
+    <h1>Braille Rap</h1>
+	<p> this web page usesd for devanagari languages Hindi and Marathi.</p>
+	<p> Hindi/marathi to Braille Converter.</p>
+    
+    <div id="textareas">
+      <textarea id='latin' placeholder="येथे लिहा./ यहापर लिखे /paste utf8 text here"></textarea>
+      <!-- <textarea id='braille'></textarea> -->
+      <div id="gui"></div>
+    </div>
+
+    <div id="output">
+      <canvas id="paperCanvas" resize hdpi></canvas>
+      <div id="gcode-container"><textarea id="gcode"></textarea></div>
+      <div>Print size: <span id="print-size">--</span></div>
+    </div>
+    <div id="info">
+          <div style="display: inline-block;" id="pos-container"><textarea id="dotposition"></textarea></div>
+		  <div style="display: inline-block;" id="optimize-container"><textarea id="optimizedgcode"></textarea></div>
+    </div>
+	
+	<p> About Braille Translator</p>
+<p>Hello! my name is Avinash Pudale!</p>
+ <p>this is Braille Translator for Indian languages using the Bharati Braille standard.</p>
+<p> This tool instantly translates Hindi/marathi/devnagari into Braille code and used with brailleRapSp.</p> 
+<p>I am soon going to add more Indian scripts here.</p>
+<p>I welcome your suggestions for improvements. Please let me know if you find any errors. Email me on avinash.pudale@gmail.com</p>
+  </body>
+  
+
+</html>
